@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Playfair Display;
+}
+
+.body {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 165px;
+}
+
+#nav-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 64px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+#nav-1 > div {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+#nav-1 svg {
+  width: 16px;
+  height: 16px;
+}
+
+#nav-1 > div:nth-child(2) button {
+  background-color: transparent;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* navigation */
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  align-items: center;
+  margin-bottom: 54px;
+}
+
+nav img {
+  width: 255px;
+  height: auto;
+}
+
+nav div {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+nav a svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* header */
+header {
+  position: relative;
+  color: white;
+  margin-bottom: 80px;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+#header__coverlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  inset: 0;
+}
+
+#header__content {
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+}
+
+#header__stats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#header__stats > svg {
+  color: black;
+  width: 16px;
+  height: 16px;
+}
+
+#header__desc {
+  font-size: 64px;
+  max-width: 14ch;
+}
+
+/* popular cateoories */
+#categories {
+  margin-bottom: 48px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 32px;
+  text-transform: capitalize;
+}
+
+#category__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.category img {
+  width: 160px;
+  height: 160px;
+  display: block;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.category p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: capitalize;
+}
