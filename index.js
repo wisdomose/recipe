@@ -316,11 +316,19 @@ function displayCollections() {
 
     titleContainer.appendChild(title);
     content.appendChild(titleContainer);
-    card.appendChild(content);
+   
 
     //meta
+    const metaContainer = document.createElement("div");
+    metaContainer.classList.add("collections__meta");
 
-    
+    const meta = document.createElement("p");
+    meta.textContent = collection.recipes;
+
+    metaContainer.appendChild(meta);
+    content.appendChild(metaContainer);
+
+    card.appendChild(content);
     container.appendChild(card);
   }))
 }

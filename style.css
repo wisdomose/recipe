@@ -236,6 +236,8 @@ h2 {
 #collections__container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  row-gap: 32px;
+  column-gap: 24px;
 }
 
 .collections__card{
@@ -247,6 +249,7 @@ h2 {
 
 .collections__card__img{
   height: 336px;
+  width: auto;
 }
 
 .collections__card__img > img{
