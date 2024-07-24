@@ -106,6 +106,39 @@ const recipies = [
   },
 ];
 
+const collections = [
+  {
+    img: "./images/curatedcoll1.jpg",
+    title: "Sushi combos for your next party",
+    recipes: "156 recipes",
+  },
+  {
+    img: "./images/menu15.jpg.jpg",
+    title: "Everything Bagel",
+    recipes: "156 recipes",
+  },
+  {
+    img: "./images/curatedcoll3.jpg",
+    title: "Cook Like a Chef",
+    recipes: "156 recipes",
+  },
+  {
+    img: "./images/curatedcoll4.jpg",
+    title: "Exquisite Dinner Recipe Ideas",
+    recipes: "156 recipes",
+  },
+  {
+    img: "./images/curatedcoll5.jpg",
+    title: "The Ultimate Cookie Frenzy",
+    recipes: "156 recipes",
+  },
+  {
+    img: "./images/curatedcoll6.jpg",
+    title: "Fot the Love of Donuts",
+    recipes: "156 recipes",
+  }
+]
+
 function displayCategories() {
   // get the category container
   // loop throught each category
@@ -253,7 +286,57 @@ function displayRecipies() {
   });
 }
 
+function displayCollections() {
+  const container = document.querySelector("#collections__container");
+  
+  collections.forEach ((collection => {
+    //card
+    const card = document.createElement("div");
+    card.classList.add("collections__card");
+
+    //img
+    const imgContainer = document.createElement("div");
+    imgContainer.classList.add("collections__card__img");
+
+    const cardImg = document.createElement("img");
+    cardImg.src = collection.img;
+
+    imgContainer.appendChild(cardImg);
+    card.appendChild(imgContainer);
+
+    //title
+    const content = document.createElement("div");
+    card.classList.add("collections__card__content");
+
+    const titleContainer = document.createElement("div");
+    titleContainer.classList.add("collections__title");
+
+    const title = document.createElement("p");
+    title.textContent =  collection.title;
+
+    titleContainer.appendChild(title);
+    content.appendChild(titleContainer);
+   
+
+    //meta
+    const metaContainer = document.createElement("div");
+    metaContainer.classList.add("collections__meta");
+
+    const meta = document.createElement("p");
+    meta.textContent = collection.recipes;
+
+    metaContainer.appendChild(meta);
+    content.appendChild(metaContainer);
+
+    card.appendChild(content);
+    container.appendChild(card);
+  }))
+}
+
+
+
 window.addEventListener("load", () => {
   displayCategories();
   displayRecipies();
+  displayCollections();
 });

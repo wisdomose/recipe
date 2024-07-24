@@ -231,3 +231,54 @@ h2 {
 .delicious__meta__entry p {
   font-size: 12px;
 }
+
+/* curated collections */
+#collections__container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 32px;
+  column-gap: 24px;
+}
+
+.collections__card{
+  border: 1px solid #D8D8D8;
+  border-radius: 6px;
+  overflow: hidden;
+  font-family: "Playfair Display";
+}
+
+.collections__card__img{
+  height: 336px;
+  width: auto;
+}
+
+.collections__card__img > img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.collections__card__content{
+  padding: 16px 25px 25px;
+}
+
+.collections__title > p{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  line-break: 16ch;
+}
+
+.collections__meta{
+  width: 123px;
+  display: flex;
+  justify-content: end;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right:21px;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Inter;
+}
