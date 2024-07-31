@@ -136,8 +136,8 @@ const collections = [
     img: "./images/curatedcoll6.jpg",
     title: "Fot the Love of Donuts",
     recipes: "156 recipes",
-  }
-]
+  },
+];
 
 function displayCategories() {
   // get the category container
@@ -288,8 +288,8 @@ function displayRecipies() {
 
 function displayCollections() {
   const container = document.querySelector("#collections__container");
-  
-  collections.forEach ((collection => {
+
+  collections.forEach((collection) => {
     //card
     const card = document.createElement("div");
     card.classList.add("collections__card");
@@ -306,17 +306,13 @@ function displayCollections() {
 
     //title
     const content = document.createElement("div");
-    card.classList.add("collections__card__content");
-
-    const titleContainer = document.createElement("div");
-    titleContainer.classList.add("collections__title");
+    content.classList.add("collections__card__content");
 
     const title = document.createElement("p");
-    title.textContent =  collection.title;
+    title.classList.add("collections__title");
+    title.textContent = collection.title;
 
-    titleContainer.appendChild(title);
-    content.appendChild(titleContainer);
-   
+    content.appendChild(title);
 
     //meta
     const metaContainer = document.createElement("div");
@@ -330,10 +326,8 @@ function displayCollections() {
 
     card.appendChild(content);
     container.appendChild(card);
-  }))
+  });
 }
-
-
 
 window.addEventListener("load", () => {
   displayCategories();
