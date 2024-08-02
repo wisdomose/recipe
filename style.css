@@ -291,6 +291,52 @@ h2 {
   font-family: Inter;
 }
 
+/* latest recipes */
+#recipes__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.recipes__card{
+  font-family: inter;
+} 
+
+.recipes__card__img{
+  height: 196px;
+}
+
+.recipes__card__img > img {
+  height: 196px;
+  width: 260px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.recipes__card__title{
+  font-size: 18px;
+  font-weight: 600;
+  /* padding: 28px 0; */
+  margin-top: 8px;
+  margin-right: 86px;
+  text-transform: capitalize;
+}
+
+#load__button{
+  margin-top: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #000;
+  font-size: 16px;
+  font-family: inter;
+  font-weight: 500;
+  padding: 9px 49px;
+}
+
+
 /* newsletter */
 .newsletter {
   background: #ffd8ca;
@@ -299,6 +345,7 @@ h2 {
   align-items: center;
   justify-content: center;
   padding: 96px 0;
+  margin-bottom: 24px;
 }
 
 .newsletter__container {
@@ -367,4 +414,96 @@ h2 {
 }
 .newsletter__container p.meta a:hover {
   color: #ff642b;
+}
+
+/* footer */
+#footer__content{
+  background-color: #F9F9F9;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+}
+
+.first{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 186px;
+  border-bottom: 1px solid #eceaea;
+  padding-bottom: 79px;
+  margin-top: 72px;
+  /* margin-left: 402px;
+  margin-right: 390px; */
+}
+
+.img__text{
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+}
+
+.img__text > img{
+  width: 160px;
+  height: auto;
+  background-color: #F9F9F9;
+  margin-bottom: 16px;
+}
+
+.img__text > p{
+  width: 376px;
+  font-family: inter;
+  font-size: 16px;
+  color: #7F7F7F;
+}
+
+.second{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 115px;
+}
+
+.list__title{
+  font-size: 14px;
+  font-family: inter;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 9px;
+}
+
+.lists ul li{
+  list-style-type: none;
+  text-transform: capitalize;
+  font-family: inter;
+  font-size: 14px;
+  color: #7F7F7F;
+}
+
+.third{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 732px;
+  margin: 28px 0;
+}
+
+#copyright{
+  color: #7F7F7F;
+  font-size: 12px;
+  font-family: inter;
+}
+
+.social__media__icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.social__media__icons svg{
+  color: #7F7F7F;
+  width: 20px;
+  height: 20px;
 }
