@@ -139,6 +139,105 @@ const collections = [
   },
 ];
 
+const recipees = [
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link.jpg",
+  },
+  {
+    label: "Cashew Vegan Rice",
+    img: "./images/Link-1.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-2.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-3.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-4.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-5.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-6.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-7.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-8.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-9.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-10.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-11.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-12.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-13.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-14.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-15.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-16.jpg",
+  },
+ {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-17.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-18.jpg",
+  },
+ {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-19.jpg",
+  },  
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-20.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-21.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-22.jpg",
+  },
+  {
+    label: "caramel strawberry milkshake",
+    img: "./images/Link-23.jpg",
+  },
+]
+
 function displayCategories() {
   // get the category container
   // loop throught each category
@@ -329,8 +428,38 @@ function displayCollections() {
   });
 }
 
+function displayRecipees() {
+  const container = document.querySelector("#recipes__container");
+
+  recipees.forEach((latest => {
+    const card = document.createElement("div");
+    card.classList.add("recipes__card");
+
+    // img
+    const imgContainer = document.createElement("div");
+    imgContainer.classList.add("recipes__card__img");
+
+    const cardImg = document.createElement("img");
+    cardImg.src = latest.img;
+
+    imgContainer.appendChild(cardImg);
+    card.appendChild(imgContainer);
+
+    // title
+    const title = document.createElement("p");
+    title.classList.add("recipes__card__title");
+    title.textContent = latest.label;
+
+    card.appendChild(title);
+
+    container.appendChild(card);
+
+  }))
+}
+
 window.addEventListener("load", () => {
   displayCategories();
   displayRecipies();
   displayCollections();
+  displayRecipees();
 });
