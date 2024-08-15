@@ -218,74 +218,75 @@
           <div id="grey_area" class="body"></div>
           </section>
 
-          <section class="recipes">
-            <div id="latest_recipes">
-              <h2>Latest recipes</h2>
-              <div class="marshme_llow">
-                <div class="img__container">
-                  <img src="./images/menu88.jpg.jpg" alt="//">
-                </div>
-                <div class="card_content">
-                  <div class="marshme_llow_rating"></div>
-                  <h2 class="card_title">Pumpkin marshmellow pie</h2>
-                  <p class="card_description">The perfect dessert for fall! finally found the perfect way to make the flakiest crust,
-                    and the toasted marshmallow is to die for!</p>
-
-                  <div class="recipe_creator"> 
-                    <div class="card_profile">
-                      <img src="./images/avatar1.png.png" alt="//">
-                      <p class="profile_name">tricia albert</p>
-                    </div>
-                    <div class="card_meta">
-                      <div class="meta_icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
-                        stroke-linejoin="round" class="feather feather-message-square">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                        <p>yesterday</p>
-                      </svg>
-                      </div>
-
-                      <div class="meta_icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
-                        stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" 
-                        width="18" height="18" rx="2" ry="2"></rect>
-                        <line x1="16" y1="2" x2="16" y2="6"></line>
-                        <line x1="8" y1="2" x2="8" y2="6"></line>
-                        <line x1="3" y1="10" x2="21" y2="10"></line>
-                        </svg>
-                        <p>456</p>
-                      </div>
-                    </div>
-                  </div>  
-                </div>  
-
+          <!-- my input -->
+       <!-- grid, 2 columns -->
+       <div class="body" id="recipes"> 
+        <!-- column 1 -->
+        <div class="latest_recipes_content">
+          <h1>Latest Recipes</h1>
+          <div>
+            <!-- featured recipe  -->
+             <div id="featured_recipe">
+              <div class="img__container">
+                <img src="./images/menu88.jpg.jpg" alt="//">
               </div>
-              <div class="cheesy_burger">
-                <div class="img__contain">
-                  <img src="./images/menu88.jpg.jpg" alt="//">
+
+              <div class="card_content">
+                <div class="card_rating"></div>
+                <h2 class="card_title">pumpkin marshmellow pie</h2>
+                <p id="card_description">The perfect dessert for fall! finally found the perfect way to make the flakiest crust,
+                  and the toasted marshmallow is to die for!</p>
+             
+
+              <div class="card_icon_meta">
+                <div class="card_profile">
+                  <img src="./images/avatar1.png.png" alt="//">
+                  <p>Tricia albert</p>
                 </div>
-                <div class="card_contentt">
-                  <div class="cheesy_rating"></div>
-                  <h2 class="cheesy_title">Pumpkin marshmellow pie</h2>
+                <div class="card_meta">
+                  <div class="message_meta">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                    stroke-linejoin="round" class="feather feather-message-square">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                  <p>456</p>
+                  </div>
+                  <div class="calendar_meta">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                    stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" 
+                    width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <p>yesterday</p>
+                  </div>
+                </div>
+              </div>
+              </div>
 
-                  <div class="recipe_creator"> 
-                    <div class="card_profile">
+             </div>
+
+             <!-- other recipes -->
+             <div id="other_recipes_container">
+              <div class="other_recipes">
+                <div class="imag_container">
+                  <img src="./images/menu89.jpg.jpg" alt="//">
+                </div>
+                <div class="other_recipes_content">
+                  <div class="other_recipes_rating"></div>
+
+                  <h2 class="other_recipes_title">mighty cheesy breakfast burger</h2>
+
+                  <div class="other_recipes_icon">
+                    <div class="other_recipes_profile">
                       <img src="./images/avatar1.png.png" alt="//">
-                      <p class="profile_name">tricia albert</p>
+                      <p>tricia albert</p>
                     </div>
-                    <div class="card_metar">
-                      <div class="meta_icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
-                        stroke-linejoin="round" class="feather feather-message-square">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                        <p>yesterday</p>
-                      </svg>
-                      </div>
-
-                      <div class="meta_icon">
+                    <div class="other_recipes_meta">
+                      <div class="other_recipes_calendar">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
                         stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" 
@@ -294,30 +295,238 @@
                         <line x1="8" y1="2" x2="8" y2="6"></line>
                         <line x1="3" y1="10" x2="21" y2="10"></line>
                         </svg>
+                        <p>yesterday</p>
+                      </div>
+                      <div class="other_recipes_message">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" class="feather feather-message-square">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
                         <p>456</p>
                       </div>
-                    </div>
-                  </div>  
-                </div>  
-            </div>
-            <div id="second_section">
-              <div class="tara_profile">
-                <img src="./images/avatar2.png.jpg" alt="///">
-                <h2 id="tara_title">
-                  Hi, i'm tara
-                </h2>
-                <p class="tara_description">
-                  I’m a former dentist with a big passion for
-                  food, now I’m full time food blogger. I love
-                  exploring new cooking techniques as well as
-                  easy and fun recipes.
-                </p>
+                    </div>                  
+                  </div>
+                </div>
+              </div>
 
-                <p class="button">Read More</p>
-        
+              <div class="other_recipes">
+                <div class="imag_container">
+                  <img src="./images/menu53.jpg.jpg" alt="//">
+                </div>
+                <div class="other_recipes_content">
+                  <div class="other_recipes_rating"></div>
+
+                  <h2 class="other_recipes_title">chocolate and berries healthy pudding</h2>
+
+                  <div class="other_recipes_icon">
+                    <div class="other_recipes_profile">
+                      <img src="./images/avatar1.png.png" alt="//">
+                      <p>tricia albert</p>
+                    </div>
+                    <div class="other_recipes_meta">
+                      <div class="other_recipes_calendar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" 
+                        width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <p>yesterday</p>
+                      </div>
+                      <div class="other_recipes_message">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" class="feather feather-message-square">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <p>456</p>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+              </div>
+
+              <div class="other_recipes">
+                <div class="imag_container">
+                  <img src="./images/menu90.jpg" alt="//">
+                </div>
+                <div class="other_recipes_content">
+                  <div class="other_recipes_rating"></div>
+
+                  <h2 class="other_recipes_title">caramel cream birthday pudding</h2>
+
+                  <div class="other_recipes_icon">
+                    <div class="other_recipes_profile">
+                      <img src="./images/avatar1.png.png" alt="//">
+                      <p>tricia albert</p>
+                    </div>
+                    <div class="other_recipes_meta">
+                      <div class="other_recipes_calendar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" 
+                        width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <p>yesterday</p>
+                      </div>
+                      <div class="other_recipes_message">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" class="feather feather-message-square">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <p>456</p>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+              </div>
+
+              <div class="other_recipes">
+                <div class="imag_container">
+                  <img src="./images/Link.jpg" alt="//">
+                </div>
+                <div class="other_recipes_content">
+                  <div class="other_recipes_rating"></div>
+
+                  <h2 class="other_recipes_title">healthy caramel stawberry milkshake</h2>
+
+                  <div class="other_recipes_icon">
+                    <div class="other_recipes_profile">
+                      <img src="./images/avatar1.png.png" alt="//">
+                      <p>tricia albert</p>
+                    </div>
+                    <div class="other_recipes_meta">
+                      <div class="other_recipes_calendar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" 
+                        width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <p>yesterday</p>
+                      </div>
+                      <div class="other_recipes_message">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" class="feather feather-message-square">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <p>456</p>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+              </div>
+             </div>
+          </div>
+        </div>
+
+        <!-- column 2 -->
+        <div>
+          <!-- profile -->
+          <section id ="profile">
+            <img src="./images/avatar2.png.jpg" alt="//">
+            <h1>hi, i'm tara</h1>
+            <p>I’m a former dentist with a big passion for
+              food, now I’m full time food blogger. I love
+              exploring new cooking techniques as well as
+              easy and fun recipes.</p>
+            <button>read more</button>
+          </section>
+
+
+          <!-- fresh recipes -->
+          <section id="fresh_recipes">
+            <h1>fresh recipes</h1>
+            <!-- grid,  2columns -->
+            <div id="fresh_recipes_container">
+              <div class="fresh_recipes_content">
+                <div class="fresh_img_container">
+                <img src="./images/menu85.jpg.jpg" alt="//">
+                </div>
+                <p>pan fried cod in creamy kale sauce</p>
+              </div>
+
+              <div class="fresh_recipes_content">
+                <div class="fresh_img_container">
+                <img src="./images/menu17.jpg" alt="//">
+              </div>
+                <p>Ricotta Chicken Salad</p>
+              </div>
+
+              <div class="fresh_recipes_content">
+                <div class="fresh_img_container">
+                <img src="./images/menu18.jpg" alt="//">
+              </div>
+                <p>easy chocolate chip cookies</p>
+              </div>
+
+              <div class="fresh_recipes_content">
+                <div class="fresh_img_container">
+                <img src="./images/Link-21.jpg" alt="//">
+              </div>
+                <p>birthday cupcaakes</p>
+              </div>
+
+              <div class="fresh_recipes_content">
+                <div class="fresh_img_container">
+                <img src="./images/menu19.jpg" alt="//">
+              </div>
+                <p>4 healthy lunch prep recipes</p>
+              </div>
+
+              <div class="fresh_recipes_content">
+                <div class="fresh_img_container">
+                <img src="./images/Link-20.jpg" alt="//">
+              </div>
+                <p>berry madness buscuits</p>
+              </div>
+
+              <div class="fresh_recipes_content">
+                <div class="fresh_img_container">
+                <img src="./images/Link-19.jpg" alt="//">
+              </div>
+                <p>tumeric lavendar tea</p>
+              </div>
+
+              <div class="fresh_recipes_content">
+                <div class="fresh_img_container">
+                <img src="./images/Link-23.jpg" alt="//">
+              </div>
+                <p>four ingredient oatmeal pancakes</p>
+              </div>
+
+              <div class="fresh_recipes_content">
+                <div class="fresh_img_container">
+                <img src="./images/menu20.jpg" alt="//">
+              </div>
+                <p>orange and lemon curd</p>
+              </div>
+
+              <div class="fresh_recipes_content">
+                <div class="fresh_img_container">
+                <img src="./images/Link-22.jpg" alt="//">
+              </div>
+                <p>gourmet fillet in roasted almond sauce</p>
               </div>
             </div>
           </section>
+
+          <!-- instagram posts -->
+          <section></section>
+        </div>
+       </div>
+
+  
 
 
          <!-- Curated Collections -->
@@ -336,51 +545,6 @@
         <p id="load__button">Load More</p>
       </section>
 
-
-
-
-      <!-- my input -->
-       <!-- grid, 2 columns -->
-       <div> 
-        <!-- column 1 -->
-        <div>
-          <h1></h1>
-          <div>
-            <!-- featured recipe  -->
-             <div></div>
-
-             <!-- other recipes -->
-             <div></div>
-          </div>
-        </div>
-
-        <!-- column 2 -->
-        <div>
-          <!-- proeile -->
-          <section>
-            <img src="" alt="">
-            <h1></h1>
-            <p></p>
-<button></button>
-          </section>
-
-
-          <!-- fresh recipes -->
-          <section>
-            <h1></h1>
-            <!-- grid,  2columns -->
-            <div>
-              <div>
-                <img src="" alt="">
-                <p></p>
-              </div>
-            </div>
-          </section>
-
-          <!-- instagram posts -->
-          <section></section>
-        </div>
-       </div>
   </main>
 
       <!-- footer -->
