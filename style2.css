@@ -40,7 +40,7 @@ nav svg{
 
 nav div {
     display: flex;
-    gap: 15px;
+    gap: 45px;
     align-items: center;
 }
   
@@ -66,7 +66,10 @@ nav a svg {
 
 .img_containerr{
     height: 351px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
 }
 
 .img_containerr>img{
@@ -78,8 +81,9 @@ nav a svg {
 
 .rating{
     display: flex;
+    gap:4px;
     padding-left: 24px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .rating > svg {
@@ -94,7 +98,6 @@ nav a svg {
     font-size: 20px;
     font-family: inter;
     font-weight: 600;
-    width: 25ch;
     padding-left: 24px;
 }
 
@@ -104,7 +107,6 @@ nav a svg {
     padding-top: 40px;
     padding-bottom: 88px;
     margin-top: 24px;
-    margin-bottom: 24px; 
 }
 
 .newsletter__container {
@@ -156,8 +158,10 @@ nav a svg {
 }
 
 #grey_area{
-    background-color: #7F7F7F;
-    border-radius: 4px;
+    background-color: #000000;
+    opacity: 0.1;
+    margin-bottom: 24px; 
+    height:50px;
 }
 
 
