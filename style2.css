@@ -5,7 +5,7 @@
 }
 
 .body {
-    max-width: 1140px; 
+    max-width: 600px; 
     margin: 0 auto;
     padding: 0 18px;
 }
@@ -109,7 +109,8 @@ nav a svg {
 
 .newsletter__container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 0 48px;
 }
@@ -118,7 +119,6 @@ nav a svg {
     font-family: 'Playfair Display';
     font-size: 30px;
     font-weight: bold;
-    width: 22ch;
 }
 
 .newsletter__container > form {
@@ -164,7 +164,6 @@ nav a svg {
 /* recipes */
 #recipes{
   display: grid;
-  grid-template-columns: 70% 30%;
   column-gap: 14px;
   margin-bottom: 48px;
 }
@@ -200,7 +199,7 @@ nav a svg {
 .card_title{
   text-transform: capitalize;
   font-family: inter;
-  font-size: 30px;
+  font-size: 20px;
   margin-top: 85px;
   font-weight: 500;
   margin-bottom: 16px;
@@ -386,7 +385,7 @@ nav a svg {
 #profile{
   text-align: center;
   border: 1px solid #d8d8d8;
-  margin-top: 60px;
+  margin-top: 124px;
   margin-bottom: 97px;
 }
 
@@ -530,7 +529,7 @@ nav a svg {
 }
 
 /* latest recipes */
-#recipes h2{
+#recipees h2{
     font-family: "Playfair Display";
     font-size: 36px;
     font-weight: bold;
@@ -688,14 +687,46 @@ nav a svg {
   
 
   @media only screen and (min-width: 600px) {
+    .body {
+      max-width: 1140px; 
+  }
+  
     #picture_container{
       grid-template-columns: repeat(1, 1fr);
+    }
+
+    .newsletter__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .newsletter__container > p{
+    width: 22ch;
+  }
+
+
+    #recipes{
+      grid-template-columns: 70% 30%;
+    }
+
+    .card_title{
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    .other_recipes_title{
+      font-size: 20px;
+      margin-top: 40px;
+    }
+
+    #profile{
+      margin-top: 60px;
     }
 
     #recipes__container {
       grid-template-columns: repeat(2, 1fr);
     }
-
 
     .first {
       align-items: start;
