@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style3.css"/>
+</head>
+<body>
+    <nav id="navbar" class="body">
+        <img src="./images/logo.jpg" alt="logo">
+        <div id="nav_contents">
+            <a href="/"
+            >Homepage
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-chevron-down"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <a href="/"
+            >Recipe page
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-chevron-down"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <a href="/"
+            >Pages
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-chevron-down"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <a href="/">Elements</a>
+          <a href="/">Buy</a>
+        </div>
+        </div>
+        <div id="search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
+            stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+
+             <img src="./images/avatar1.png.png" alt="avatar">
+        </div>
+    </nav>
+
+    <div id="profile_nav" class="body"> 
+        <h2>Profile</h2>
+
+        <button>SAVE</button>
+    </div>
+
+    <main class="body">
+        <div id="profile_container">
+            <img src="./images/avatar12.png.png" alt="//">
+        <div id="button_container">    
+            <button id="change_photo">change photo</button>
+            <button id="delete">delete</button>
+        </div>    
+        </div>
+
+        <form action="//" id="form" class="body2">
+          <div class="input_container">
+            <label for="Full Name">FULL NAME</label><br>
+            <input type="text" placeholder=""><br>
+          </div>
+
+          <div class="input_container">
+            <label for="Full Name">USERNAME</label><br>
+            <input type="text" placeholder=""><br>
+          </div>
+
+          <div class="input_container">
+            <label for="Full Name">EMAIL</label><br>
+            <input type="email" placeholder=""><br>
+          </div>
+
+          <div class="input_container">
+            <label for="Full Name">PASSWORD</label><br>
+            <input type="password" placeholder=""><br>
+          </div>
+        </form>
+
+        <p id="change" class="body2">change</p>
+
+        <div id="connected_accounts" class="body2">
+            <h3>connected accounts</h3>
+            
+            <div id="facebook">
+                <div id="facebook_name">
+                    <img src="./images/Figure → facebook-logo.svg.png" alt="//">
+                    <p>Susan miller</p>
+                </div>
+
+                <p>disconnect</p>
+            </div>
+            <div id="google">
+              <div id="google_name">
+                <img src="./images/Figure → google-logo.svg.png" alt="//">
+                <p>Suzan@gmail.com</p>
+            </div>
+
+              <p>disconnect</p>
+            </div>
+        </div>
+
+        <div id="newsletter" class="body2">
+          <h3>Newsletter</h3>
+
+          <div id="newsletter_container">
+            <p>You are currently sunscribed to our newsletter</p>
+            
+            <button>unsubscribe</button>
+          </div>
+        </div>
+
+        <div id="sign" class="body2">
+          <div id="sign_out">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+            stroke-linejoin="round" class="feather feather-log-out">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+            <polyline points="16 17 21 12 16 7"></polyline>
+            <line x1="21" y1="12" x2="9" y2="12"></line>
+            </svg>
+
+            <p>sign out</p>
+          </div> 
+          
+          <p id="text">delete account</p>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer__content">
+      <div class="body">
+        <div class="content">
+          <div class="first">
+            <div class="img__text">
+              <img src="./images/logo.jpg" alt="logo" />
+              <p>
+                On the other hand, we denounce with righteous indignation and
+                dislike men who are so beguiled and demoralized by the charms of
+                pleasure of the moment
+              </p>
+            </div>
+            <div class="second">
+              <div class="lists">
+                <p class="list__title">tastebite</p>
+                <ul>
+                  <li>about us</li>
+                  <li>careers</li>
+                  <li>contact us</li>
+                  <li>feedback</li>
+                </ul>
+              </div>
+              <div class="lists">
+                <p class="list__title">legal</p>
+                <ul>
+                  <li>terms</li>
+                  <li>Conditions</li>
+                  <li>cookies</li>
+                  <li>copyright</li>
+                </ul>
+              </div>
+              <div class="lists">
+                <p class="list__title">follow</p>
+                <ul>
+                  <li>facebook</li>
+                  <li>twitter</li>
+                  <li>instagram</li>
+                  <li>youtube</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="third">
+            <div id="copyright">
+              <p>© 2020 Tastebite - All rights reserved</p>
+            </div>
+            <div class="social__media__icons">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-facebook"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                ></path>
+              </svg>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-instagram"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-twitter"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 
+                13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                ></path>
+              </svg>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-youtube"
+              >
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 
+                11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 
+                0 .46-5.25 29 29 0 0 0-.46-5.33z"
+                ></path>
+                <polygon
+                  points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
+                ></polygon>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
