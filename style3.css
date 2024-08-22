@@ -139,16 +139,31 @@ nav > img{
 }
 
 .input-container {
-    position: relative;
+    /* position: relative; */
     width: 100%;
 }
 
+.fa{
+  position: absolute;
+  padding: 10px;
+  width: 24px;
+  height: 24px;
+  /* min-width: 40px; */
+}
 
 #form label{
     margin-bottom: 8px;
     font-size: 14px;
     font-family: inter;
     text-transform: uppercase;
+}
+
+.input-field{
+  width: 100%;
+  padding: 10px; 
+  padding-left: 32px;
+  margin-bottom: 4px;
+
 }
 
 #form input{

@@ -205,6 +205,19 @@ nav a svg {
   /* margin-left: 49px; */
 }
 
+.rating2 {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.rating2 > svg {
+  width: 14px;
+  height: 14px;
+  fill: #ff642f;
+  stroke: none;
+}
+
 .card_title {
   text-transform: capitalize;
   font-family: inter;
